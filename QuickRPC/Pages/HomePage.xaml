@@ -1,0 +1,79 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:QuickRPC.Pages"
+    xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+      xmlns:hc="https://handyorg.github.io/handycontrol" x:Class="QuickRPC.Pages.HomePage"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="HomePage">
+    
+    <Page.ContextMenu>
+        <ContextMenu>
+            <ContextMenu.Template>
+                <ControlTemplate>
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <hc:TextBox x:Name="Profile" hc:InfoElement.Placeholder="Name"/>
+                            <MenuItem Header="Save"/>
+                        </StackPanel>
+                        <MenuItem Header="Clear All"/>
+                        <MenuItem Header="Copy"/>
+                        <MenuItem Header="Paste"/>
+                    </StackPanel>
+                </ControlTemplate>
+            </ContextMenu.Template>
+        </ContextMenu>
+    </Page.ContextMenu>
+    
+    <hc:RelativePanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <StackPanel Margin="0,123,0,0" Orientation="Horizontal">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Stretch">
+                <hc:TextBox x:Name="ClientIdBox" hc:InfoElement.Necessary="True" hc:InfoElement.Title="Client ID"  hc:InfoElement.Placeholder="80351110224678912" Margin="5,0,5,0" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Text="" Width="335"/>
+                <hc:TextBox x:Name="DetailsBox" hc:InfoElement.Title="Details"  hc:InfoElement.Placeholder="My Awesome Rich Presence" Margin="5,0,5,0" HorizontalAlignment="Center" VerticalAlignment="Center"  TextWrapping="Wrap" Text="" Width="335"/>
+                <hc:TextBox x:Name="StateBox" hc:InfoElement.Title="State"  hc:InfoElement.Placeholder="Playing QuickRPC" Margin="5,0,5,0" HorizontalAlignment="Center" VerticalAlignment="Center"  TextWrapping="Wrap" Text="" Width="335"/>
+                <RadioButton x:Name="NoneTimeStampRb" Margin="5,5,5,5" Content="None" HorizontalAlignment="Left"/>
+                <RadioButton x:Name="TimeStampRb" Margin="5,5,5,5" Content="Timestamp" HorizontalAlignment="Left"/>
+                <RadioButton x:Name="CustomTimeStampRb" Margin="5,5,5,5" Content="Custom" HorizontalAlignment="Left" Click="CustomTimeStampRB_Click"/>
+                <StackPanel Orientation="Horizontal">
+                    <hc:NumericUpDown x:Name="PartySizeBox" hc:InfoElement.TitlePlacement="Left"  hc:InfoElement.Title="Party Size" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource NumericUpDownExtend}" Margin="5,0,5,0"/>
+                    <hc:NumericUpDown x:Name="MaxPartySizeBox" hc:InfoElement.TitlePlacement="Left"  hc:InfoElement.Title="Max Size" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource NumericUpDownExtend}" Margin="5,0,5,0"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Width="454" Orientation="Horizontal" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                <StackPanel Orientation="Vertical" Width="455">
+                    <StackPanel Orientation="Horizontal">
+                        <hc:TextBox x:Name="LargeKey" hc:InfoElement.Title="Large Image Key" Width="200" Margin="5,0,5,0" HorizontalAlignment="Left"/>
+                        <hc:TextBox x:Name="SmallKey" hc:InfoElement.Title="Small Image Key" Width="200" Margin="5,0,5,0" HorizontalAlignment="Left"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <hc:TextBox x:Name="LargeText" hc:InfoElement.Title="Large Image Text" Width="200" Margin="5,0,5,0" HorizontalAlignment="Left"/>
+                        <hc:TextBox x:Name="SmallText" hc:InfoElement.Title="Small Image Text" Width="200" Margin="5,0,5,0" HorizontalAlignment="Left"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <hc:TextBox x:Name="Button1Text" hc:InfoElement.Title="Button 1 Text" Width="200" Margin="5,0,5,0" HorizontalAlignment="Left"/>
+                        <hc:TextBox x:Name="Button2Text" hc:InfoElement.Title="Button 2 Text" Width="200" Margin="5,0,5,0" HorizontalAlignment="Left"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <hc:TextBox x:Name="Button1Url" hc:InfoElement.Title="Button 1 URL" Width="200" Margin="5,0,5,0" HorizontalAlignment="Left"/>
+                        <hc:TextBox x:Name="Button2Url" hc:InfoElement.Title="Button 2 URL" Width="200" Margin="5,0,5,0" HorizontalAlignment="Left"/>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <Menu Margin="0,0,314,373" Height="120">
+            <MenuItem x:Name="StartMenuItem" Header="Start" Click="StartMenuItem_Click"/>
+            <MenuItem x:Name="PauseMenuItem" Header="Pause" Click="PauseMenuItem_Click"/>
+            <MenuItem x:Name="StopMenuItem" Header="Stop" Click="StopMenuItem_Click"/>
+            <MenuItem x:Name="RestartMenuItem" Header="Restart" Click="RestartMenuItem_Click"/>
+            <MenuItem x:Name="SaveMenuItem" Header="Save" Click="SaveMenuItem_Click"/>
+            <MenuItem x:Name="ClearMenuItem" Header="Clear"/>
+            <hc:TextBox x:Name="ProfileNameBox" Text="" hc:InfoElement.Placeholder="Profile 1" hc:InfoElement.Title="Profile Name" hc:InfoElement.TitlePlacement="Left"/>
+        </Menu>
+        <StackPanel x:Name="UserInfoPanel" Margin="160,10,179,323" Orientation="Vertical">
+            
+        </StackPanel>
+    </hc:RelativePanel>
+</Page>

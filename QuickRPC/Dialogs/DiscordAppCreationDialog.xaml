@@ -1,0 +1,23 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuickRPC.Dialogs"
+        xmlns:hc="https://handyorg.github.io/handycontrol" x:Class="QuickRPC.Dialogs.DiscordAppCreationDialog"
+        mc:Ignorable="d"
+        Title="DiscordAppCreationDialog" Height="250" Width="550">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <hc:ImageSelector HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="100" Width="100"/>
+            <StackPanel Orientation="Vertical">
+                <hc:TextBox Margin="5,5,5,5" hc:InfoElement.Title="ApplicationName" hc:InfoElement.Placeholder="Test Discord App" Height="60" Width="200"/>
+                <hc:TextBox Margin="5,5,5,5" hc:InfoElement.Title="ApplicationName" hc:InfoElement.Placeholder="Test Discord App" Height="60" Width="200"/>
+            </StackPanel>
+            <hc:ButtonGroup Margin="110,200,5,5">
+                <Button Content="Ok"/>
+                <Button Content="Cancel"/>
+            </hc:ButtonGroup>
+        </StackPanel>
+    </Grid>
+</Window>

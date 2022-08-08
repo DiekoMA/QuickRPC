@@ -1,0 +1,104 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\dieko\\Desktop\\Vs Projects\\QuickRPC\\QuickRPC\\QuickRPC.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\dieko\\Desktop\\Vs Projects\\QuickRPC\\QuickRPC\\QuickRPC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dieko\\Desktop\\Vs Projects\\QuickRPC\\QuickRPC\\QuickRPC.csproj",
+        "projectName": "QuickRPC",
+        "projectPath": "C:\\Users\\dieko\\Desktop\\Vs Projects\\QuickRPC\\QuickRPC\\QuickRPC.csproj",
+        "packagesPath": "C:\\Users\\dieko\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dieko\\Desktop\\Vs Projects\\QuickRPC\\QuickRPC\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dieko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://ci.appveyor.com/nuget/gemini-g84phgw340sm": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "DiscordRichPresence": {
+              "target": "Package",
+              "version": "[1.0.175, )"
+            },
+            "FontAwesome.Sharp": {
+              "target": "Package",
+              "version": "[6.1.1, )"
+            },
+            "HandyControls": {
+              "target": "Package",
+              "version": "[3.3.11, )"
+            },
+            "Microsoft.AppCenter": {
+              "target": "Package",
+              "version": "[4.5.1, )"
+            },
+            "Microsoft.AppCenter.Analytics": {
+              "target": "Package",
+              "version": "[4.5.1, )"
+            },
+            "Microsoft.AppCenter.Crashes": {
+              "target": "Package",
+              "version": "[4.5.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

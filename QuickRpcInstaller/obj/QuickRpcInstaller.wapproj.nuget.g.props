@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\dieko\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.2.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\dieko\.nuget\packages\" />
+    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\microsoft.windows.sdk.buildtools\10.0.22000.194\build\Microsoft.Windows.SDK.BuildTools.props" Condition="Exists('C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\microsoft.windows.sdk.buildtools\10.0.22000.194\build\Microsoft.Windows.SDK.BuildTools.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_Xaml_Behaviors_Wpf Condition=" '$(PkgMicrosoft_Xaml_Behaviors_Wpf)' == '' ">C:\Users\dieko\.nuget\packages\microsoft.xaml.behaviors.wpf\1.1.19</PkgMicrosoft_Xaml_Behaviors_Wpf>
+    <PkgMicrosoft_Net_Native_SharedLibrary-x86 Condition=" '$(PkgMicrosoft_Net_Native_SharedLibrary-x86)' == '' ">C:\Users\dieko\.nuget\packages\microsoft.net.native.sharedlibrary-x86\1.7.3</PkgMicrosoft_Net_Native_SharedLibrary-x86>
+    <PkgMicrosoft_Net_Native_SharedLibrary-x64 Condition=" '$(PkgMicrosoft_Net_Native_SharedLibrary-x64)' == '' ">C:\Users\dieko\.nuget\packages\microsoft.net.native.sharedlibrary-x64\1.7.3</PkgMicrosoft_Net_Native_SharedLibrary-x64>
+    <PkgMicrosoft_Net_Native_SharedLibrary-arm Condition=" '$(PkgMicrosoft_Net_Native_SharedLibrary-arm)' == '' ">C:\Users\dieko\.nuget\packages\microsoft.net.native.sharedlibrary-arm\1.7.3</PkgMicrosoft_Net_Native_SharedLibrary-arm>
+    <PkgMicrosoft_Net_Native_Compiler Condition=" '$(PkgMicrosoft_Net_Native_Compiler)' == '' ">C:\Users\dieko\.nuget\packages\microsoft.net.native.compiler\1.7.6</PkgMicrosoft_Net_Native_Compiler>
+    <PkgMahApps_Metro Condition=" '$(PkgMahApps_Metro)' == '' ">C:\Users\dieko\.nuget\packages\mahapps.metro\2.4.9</PkgMahApps_Metro>
+    <PkgHandyControls Condition=" '$(PkgHandyControls)' == '' ">C:\Users\dieko\.nuget\packages\handycontrols\3.3.11</PkgHandyControls>
+  </PropertyGroup>
+</Project>

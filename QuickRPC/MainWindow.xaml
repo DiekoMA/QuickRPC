@@ -1,0 +1,50 @@
+﻿<hc:Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuickRPC"
+        xmlns:hc="https://handyorg.github.io/handycontrol" x:Class="QuickRPC.MainWindow"
+        xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        Title="MainWindow" Height="486.4" Width="952.8">
+    <Grid>
+        <hc:SideMenu HorizontalAlignment="Left" Width="173">
+            <hc:SideMenuItem Background="{DynamicResource RegionBrush}" x:Name="HomeItem" Header="Home" Selected="HomeItem_Selected">
+                <hc:SideMenuItem.Icon>
+                    <fa:IconBlock Icon="Home" Foreground="Blue"/>
+                </hc:SideMenuItem.Icon>
+            </hc:SideMenuItem>
+            <hc:SideMenuItem x:Name="ProfilesItem" Header="Profiles" Selected="ProfilesItem_Selected">
+                <hc:SideMenuItem.Icon>
+                    <fa:IconBlock Icon="Bookmark" Foreground="Blue"/>
+                </hc:SideMenuItem.Icon>
+            </hc:SideMenuItem>
+            <hc:SideMenuItem x:Name="KeybindsItem" Header="KeyBinds" Selected="KeybindsItem_Selected">
+                <hc:SideMenuItem.Icon>
+                    <fa:IconBlock Icon="Keyboard" Foreground="Blue"/>
+                </hc:SideMenuItem.Icon>
+            </hc:SideMenuItem>
+            <hc:SideMenuItem x:Name="SettingsItem" Header="Settings" Selected="SettingsItem_Selected">
+                <hc:SideMenuItem.Icon>
+                    <fa:IconBlock Icon="EllipsisH" Foreground="Blue"/>
+                </hc:SideMenuItem.Icon>
+            </hc:SideMenuItem>
+            <hc:SideMenuItem x:Name="ConsoleItem" Header="Console" Selected="ConsoleItem_Selected">
+                <hc:SideMenuItem.Icon>
+                    <fa:IconBlock Icon="Terminal" Foreground="Blue"/>
+                </hc:SideMenuItem.Icon>
+            </hc:SideMenuItem>
+            <hc:SideMenuItem IsEnabled="False"/>
+            <hc:SideMenuItem IsEnabled="False"/>
+            <hc:SideMenuItem x:Name="ExitItem" Header="Exit" Selected="ExitItem_Selected">
+                <hc:SideMenuItem.Icon>
+                    <fa:IconBlock Icon="WindowClose" Foreground="Blue"/>
+                </hc:SideMenuItem.Icon>
+            </hc:SideMenuItem>
+        </hc:SideMenu>
+        <Frame x:Name="MainContentFrame" Content="Frame`" Background="{DynamicResource RegionBrush}" Margin="173,0,0,0" Source="/Pages/HomePage.xaml" NavigationUIVisibility="Hidden" Foreground="{x:Null}" BorderBrush="{x:Null}"/>
+        <hc:NotifyIcon Margin="0,0,768,436"/>
+    </Grid>
+</hc:Window>

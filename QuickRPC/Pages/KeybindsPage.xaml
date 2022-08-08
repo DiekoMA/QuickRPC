@@ -1,0 +1,76 @@
+﻿<Page x:Class="QuickRPC.Pages.KeybindsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:hc="https://handyorg.github.io/handycontrol"
+      xmlns:local="clr-namespace:QuickRPC.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="KeybindsPage">
+
+    <Grid>
+        <StackPanel>
+            <ListBox>
+                <ListBoxItem Background="{x:Null}" HorizontalAlignment="Stretch">
+                    <StackPanel Orientation="Horizontal" Margin="5,5,5,5" HorizontalAlignment="Stretch">
+                        <hc:SimpleText Margin="0,0,10,0" Text="Profile 1" VerticalAlignment="Center"/>
+                        <hc:ComboBox x:Name="P1_ModifierBox" Margin="10,0,10,0" hc:InfoElement.Placeholder="Modifier Key" IsEnabled="False"/>
+                        <hc:ComboBox x:Name="P1_KeyBox" Margin="10,0,10,0" hc:InfoElement.Placeholder="Key" IsEnabled="False"/>
+                        <ToggleButton x:Name="P1_ToggleButton" Margin="360,0,10,0" Style="{StaticResource ToggleButtonSwitch}" Content="Enabled" Checked="P1_ToggleButton_Checked" HorizontalAlignment="Right"/>
+                    </StackPanel>
+                </ListBoxItem>
+            </ListBox>
+            <ListBox>
+                <ListBoxItem Background="{x:Null}">
+                    <StackPanel Orientation="Horizontal" Margin="5,5,5,5">
+                        <hc:SimpleText Margin="0,0,10,0" Text="Profile 2" VerticalAlignment="Center"/>
+                        <hc:ComboBox x:Name="P2_ModifierBox" Margin="10,0,10,0" hc:InfoElement.Placeholder="Modifier Key"/>
+                        <hc:ComboBox x:Name="P2_KeyBox" Margin="10,0,10,0" hc:InfoElement.Placeholder="Key"/>
+                        <ToggleButton x:Name="P2_ToggleButton" Margin="360,0,10,0" Style="{StaticResource ToggleButtonSwitch}" Content="Enabled"/>
+                    </StackPanel>
+                </ListBoxItem>
+            </ListBox>
+            <ListBox>
+                <ListBoxItem Background="{x:Null}">
+                    <StackPanel Orientation="Horizontal" Margin="5,5,5,5">
+                        <hc:SimpleText Margin="0,0,10,0" Text="Profile 3" VerticalAlignment="Center"/>
+                        <hc:ComboBox x:Name="P3_ModifierBox" Margin="10,0,10,0" hc:InfoElement.Placeholder="Modifier Key"/>
+                        <hc:ComboBox x:Name="P3_KeyBox" Margin="10,0,10,0" hc:InfoElement.Placeholder="Key"/>
+                        <ToggleButton x:Name="P3_ToggleButton" Margin="360,0,10,0" Style="{StaticResource ToggleButtonSwitch}" Content="Enabled"/>
+                    </StackPanel>
+                </ListBoxItem>
+            </ListBox>
+            <ListBox>
+                <ListBoxItem Background="{x:Null}">
+                    <StackPanel Orientation="Horizontal" Margin="5,5,5,5">
+                        <hc:SimpleText Margin="0,0,10,0" Text="Profile 4" VerticalAlignment="Center"/>
+                        <hc:ComboBox x:Name="P4_ModifierBox" Margin="10,0,10,0" hc:InfoElement.Placeholder="Modifier Key"/>
+                        <hc:ComboBox x:Name="P4_KeyBox" Margin="10,0,10,0" hc:InfoElement.Placeholder="Key"/>
+                        <ToggleButton x:Name="P4_ToggleButton" Margin="360,0,10,0" Style="{StaticResource ToggleButtonSwitch}" Content="Enabled"/>
+                    </StackPanel>
+                </ListBoxItem>
+            </ListBox>
+            <ListBox>
+                <ListBoxItem Background="{x:Null}">
+                    <StackPanel Orientation="Horizontal" Margin="5,5,5,5">
+                        <hc:SimpleText Margin="0,0,10,0" Text="Profile 5" VerticalAlignment="Center"/>
+                        <hc:ComboBox x:Name="P5_ModifierBox" Margin="10,0,10,0" hc:InfoElement.Placeholder="Modifier Key"/>
+                        <hc:ComboBox x:Name="P5_KeyBox" Margin="10,0,10,0" hc:InfoElement.Placeholder="Key"/>
+                        <ToggleButton x:Name="P5_ToggleButton" Margin="360,0,10,0" Style="{StaticResource ToggleButtonSwitch}" Content="Enabled"/>
+                    </StackPanel>
+                </ListBoxItem>
+            </ListBox>
+            <ListBox>
+                <ListBoxItem Background="{x:Null}">
+                    <StackPanel Orientation="Horizontal" Margin="5,5,5,5">
+                        <hc:SimpleText Margin="0,0,10,0" Text="Profile 6" VerticalAlignment="Center"/>
+                        <hc:ComboBox x:Name="P6_ModifierBox" Margin="10,0,10,0" hc:InfoElement.Placeholder="Modifier Key"/>
+                        <hc:ComboBox x:Name="P6_KeyBox" Margin="10,0,10,0" hc:InfoElement.Placeholder="Key"/>
+                        <ToggleButton x:Name="P6_ToggleButton" Margin="360,0,10,0" Style="{StaticResource ToggleButtonSwitch}" Content="Enabled"/>
+                    </StackPanel>
+                </ListBoxItem>
+            </ListBox>
+        </StackPanel>
+    </Grid>
+</Page>

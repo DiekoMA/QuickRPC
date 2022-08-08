@@ -1,0 +1,20 @@
+﻿QuickRPC
+1.0.0.0
+
+winexe
+C#
+.cs
+C:\Users\dieko\Desktop\Vs Projects\QuickRPC\QuickRPC\obj\Release\net6.0-windows\
+QuickRPC
+none
+false
+TRACE;RELEASE;NET;NET6_0;NETCOREAPP
+C:\Users\dieko\Desktop\Vs Projects\QuickRPC\QuickRPC\App.xaml
+8615993939
+
+20-1239338967
+220-562185331
+Dialogs\DiscordAppCreationDialog.xaml;Dialogs\ProfileCreationDialog.xaml;MainWindow.xaml;Pages\ConsolePage.xaml;Pages\HomePage.xaml;Pages\KeybindsPage.xaml;Pages\ProfilesPage.xaml;Pages\SettingsPage.xaml;
+
+False
+

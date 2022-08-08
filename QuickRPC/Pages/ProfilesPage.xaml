@@ -1,0 +1,45 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:hc="https://handyorg.github.io/handycontrol" x:Class="QuickRPC.Pages.ProfilesPage"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ProfilesPage" ClipToBounds="True">
+
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <hc:SearchBar x:Name="ProfilesSearchBox" hc:InfoElement.Placeholder="Profile Name" Margin="5,5,5,5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="445" SearchStarted="SearchBar_SearchStarted" TextChanged="ProfilesSearchBox_TextChanged"/>
+                <hc:CheckComboBox hc:TitleElement.Title="Filter by" hc:TitleElement.TitlePlacement="Left" hc:InfoElement.Placeholder="" Width="150" Margin="5,5,5,5">
+                    <ComboBoxItem Content="Tag 1"/>
+                    <ComboBoxItem Content="Tag 2"/>
+                    <ComboBoxItem Content="Tag 3"/>
+                    <ComboBoxItem Content="Tag 4"/>
+                </hc:CheckComboBox>
+                <hc:ComboBox hc:InfoElement.Title="Sort by" hc:InfoElement.TitlePlacement="Left"  hc:InfoElement.Placeholder="Ascending Order" VerticalAlignment="Center" Width="175" Margin="5,5,5,5">
+                    <ComboBoxItem Content="Name"/>
+                    <ComboBoxItem Content="Ascending Order"/>
+                    <ComboBoxItem Content="Descending Order"/>
+                    <ComboBoxItem Content="Date Added"/>
+                </hc:ComboBox>
+            </StackPanel>
+            <ListBox x:Name="ProfilesBox" hc:Empty.ShowEmpty="True" Height="406" ClipToBounds="True" SelectionChanged="ProfilesBox_SelectionChanged">
+                <ListBox.ContextMenu>
+                    <ContextMenu>
+                        <ContextMenu.Template>
+                            <ControlTemplate>
+                                <StackPanel>
+                                    <MenuItem Header="Refresh"/>
+                                    <MenuItem Header="Load"/>
+                                    <MenuItem Header="Delete"/>
+                                </StackPanel>
+                            </ControlTemplate>
+                        </ContextMenu.Template>
+                    </ContextMenu>
+                </ListBox.ContextMenu>    
+            </ListBox>
+        </StackPanel>
+    </Grid>
+</Page>
